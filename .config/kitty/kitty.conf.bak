@@ -1,0 +1,42 @@
+term xterm-256color
+
+# wallust-colors
+#include kitty-colors.conf
+font_size 12.0
+
+background_opacity 0.8
+dynamic_background_opacity 1
+
+confirm_os_window_close 0
+
+# change to x11 or wayland or leave auto
+linux_display_server auto
+
+scrollback_lines 2000
+wheel_scroll_min_lines 1
+
+enable_audio_bell no
+
+window_padding_width 4
+# selection_foreground none
+# selection_background none
+
+#foreground #dddddd
+#background #000000
+# background #10131c
+# foreground #bbc2cf
+# cursor #dddddd
+
+# BEGIN_KITTY_FONTS
+font_family      family='JetBrainsMono Nerd Font' postscript_name=JetBrainsMonoNF-Regular
+bold_font        family='JetBrainsMono Nerd Font' postscript_name=JetBrainsMonoNF-SemiBold features='zero ss19 calt ss01 ss02'
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
+
+fallback_family FiraCode Nerd Font Mono
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Mocha
+include current-theme.conf
+# END_KITTY_THEME

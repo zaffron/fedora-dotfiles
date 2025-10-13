@@ -1,0 +1,4 @@
+.users_cache.json
+.config/mcphub/servers.json
+.config/mcphub/logs/*
+todo-md/
