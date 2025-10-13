@@ -1,6 +1,6 @@
-# Zaffron (Dotfiles) - "I use Arch, BTW! LOL"
+# Zaffron (Fedora - Dotfiles) - "Copy from my arch dotfiles, truncated down to bare bones"
 
-##### This is configuration for setting up my arch OS with proper config files on the go
+##### This is configuration for setting up my fedor OS with proper config files on the go
 
 ## How to setup
 
@@ -10,9 +10,6 @@
 - From inside the directory(open in command line) and run the following command `stow --adopt .`
 - This should auto symlink all the config files
 
-## For basic setup I have used the following repo, though it is very old repo and might not work as of now
-
-[Jakoolit](https://github.com/JaKooLit/Arch-Hyprland)
 
 ## Make sure following are installed
 

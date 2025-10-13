@@ -1,5 +1,6 @@
 # setting path for cargo bins
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # =================
 # PYENV CONFIG

@@ -1,3 +1,4 @@
+-- TMUX is king and it's here to stay
 return {
   "christoomey/vim-tmux-navigator",
   cmd = {

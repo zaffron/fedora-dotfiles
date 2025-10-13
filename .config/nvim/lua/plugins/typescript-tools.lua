@@ -1,3 +1,4 @@
+-- The default JS LSP on Mason eats memory and slows AF
 return {
   "pmizio/typescript-tools.nvim",
   dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },

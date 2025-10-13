@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
+-- Best font ever
 vim.o.guifont = "MonoLisa Nerd Font:h14"
 
 vim.opt.number = true
@@ -55,7 +56,7 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- End of line
-vim.opt.eol = true -- Ensure EOL at the end of file
+vim.opt.eol = true    -- Ensure EOL at the end of file
 vim.opt.fixeol = true -- Fix missing EOL when saving
 
 -- [[ Basic Keymaps ]]
@@ -103,9 +104,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 vim.o.foldenable = false -- Do not fold on file open
-vim.o.foldlevel = 99 -- Nothing is folded, even if enabled
+vim.o.foldlevel = 99     -- Nothing is folded, even if enabled
 
 -- setting autocommand to restore cursor
+-- Moterfucker!!!!!!!!, I swear to god, this irritates me so much, I like using blinking pipe cursor on terminal but everytime I quit vim, it goes to beam cursor which annoys the hell out of me
 vim.api.nvim_create_autocmd("ExitPre", {
   group = vim.api.nvim_create_augroup("Exit", { clear = true }),
   command = "set guicursor=a:ver90",

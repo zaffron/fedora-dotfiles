@@ -1,3 +1,4 @@
+-- Very useful to show git changes and diagnostics on scrollbar but meh, I can just use my eyes
 return {
   "petertriho/nvim-scrollbar",
   dependencies = { "catppuccin/nvim" },
@@ -17,7 +18,7 @@ return {
       },
       handlers = {
         diagnostic = true, -- Enable LSP diagnostic marks
-        gitsigns = true, -- Enable Git signs in scrollbar
+        gitsigns = true,   -- Enable Git signs in scrollbar
       },
     })
   end,

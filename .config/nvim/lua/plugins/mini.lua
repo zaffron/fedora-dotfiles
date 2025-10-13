@@ -42,16 +42,16 @@ return {
       -- saiw surround with no whitespace
       -- saw surround with whitespace
       mappings = {
-        add = "msa", -- Add surrounding in Normal and Visual modes
-        delete = "msd", -- Delete surrounding
-        find = "msf", -- Find surrounding (to the right)
-        find_left = "msF", -- Find surrounding (to the left)
-        highlight = "msh", -- Highlight surrounding
-        replace = "msr", -- Replace surrounding
+        add = "msa",            -- Add surrounding in Normal and Visual modes
+        delete = "msd",         -- Delete surrounding
+        find = "msf",           -- Find surrounding (to the right)
+        find_left = "msF",      -- Find surrounding (to the left)
+        highlight = "msh",      -- Highlight surrounding
+        replace = "msr",        -- Replace surrounding
         update_n_lines = "msn", -- Update `n_lines`
 
-        suffix_last = "l", -- Suffix to search with "prev" method
-        suffix_next = "n", -- Suffix to search with "next" method
+        suffix_last = "l",      -- Suffix to search with "prev" method
+        suffix_next = "n",      -- Suffix to search with "next" method
       },
 
       -- Number of lines within which surrounding is searched

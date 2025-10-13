@@ -1,3 +1,4 @@
+-- Someday, I will avoid mason lsp configs but man, I am not that teenager anymore who wants to gets involved in maintaining LSP dependencies hell
 -- vim.lsp.enable({
 --   "cssls",
 --   "cssmodules",

@@ -16,17 +16,10 @@ return {
       end
 
       vim.filetype.add({
-        extension = { rasi = "rasi", rofi = "rasi", wofi = "rasi" },
         filename = {
           ["vifmrc"] = "vim",
         },
         pattern = {
-          [".*/waybar/wallust/.*"] = "jsonc",
-          [".*/waybar/style/.*"] = "css",
-          [".*/waybar/configs/.*"] = "jsonc",
-          [".*/waybar/[^/]+"] = "jsonc",
-          [".*/kitty/.+%.conf"] = "kitty",
-          [".*/hypr/.+%.conf"] = "hyprlang",
           ["%.env%.[%w_.-]+"] = "sh",
         },
       })
@@ -34,18 +27,6 @@ return {
       vim.treesitter.language.register("bash", "kitty")
 
       add("git_config")
-
-      if have("hypr") then
-        add("hyprlang")
-      end
-
-      if have("fish") then
-        add("fish")
-      end
-
-      if have("rofi") or have("wofi") then
-        add("rasi")
-      end
     end,
     config = function()
       local configs = require("nvim-treesitter.configs")

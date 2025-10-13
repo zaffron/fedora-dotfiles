@@ -1,5 +1,6 @@
 return {
   "brenoprata10/nvim-highlight-colors",
+  -- This fucking useless plugin eats up my CPU and momory like a those fucking hounds owned by Ramsey
   enabled = false,
   config = function()
     vim.opt.termguicolors = true
