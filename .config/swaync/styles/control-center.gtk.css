@@ -1,0 +1,222 @@
+@import "./colors-swaync.css";
+
+.notification-group {
+  margin: 8px 8px 2px 8px;
+}
+
+.notification-group-headers {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: @text;
+  letter-spacing: 2px;
+}
+
+.notification-group-icon {
+  color: @foreground;
+}
+
+.control-center {
+  box-shadow:
+    0 0 8px 0 rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1px @color9;
+  border-radius: 6px;
+  margin: 18px;
+  background-color: @color9;
+  color: @foreground;
+  padding: 14px;
+}
+
+/** Widget title, that thing with Notifications and gommage button */
+.control-center .widget-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.control-center .widget-label:first-child > label {
+  font-size: 1.5rem;
+  color: @text;
+  margin-left: 140px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  letter-spacing: 3px;
+}
+
+.control-center .widget-title > label {
+  color: @text;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.control-center .widget-title button {
+  border-radius: 6px;
+  color: @text;
+  background-color: @color1;
+  box-shadow: inset 0 0 0 1px @color9;
+  padding: 8px;
+}
+
+.control-center .widget-title button:hover {
+  box-shadow: inset 0 0 0 1px @color1;
+  background-color: @color3;
+  color: @foreground;
+}
+
+.control-center .widget-title button:active {
+  box-shadow: inset 0 0 0 1px @color3;
+  background-color: @color1;
+  color: @foreground;
+}
+
+.control-center .notification-row .notification-background {
+  border-radius: 6px;
+  color: #cad3f5;
+  background-color: @color1;
+  box-shadow: inset 0 0 0 1px @color9;
+  margin-top: 14px;
+}
+
+.control-center .notification-row .notification-background .notification:hover {
+  box-shadow: inset 0 0 0 1px #494d64;
+  color: #cad3f5;
+}
+
+.control-center .notification-row .notification-background .notification {
+  background-color: @color3;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification.critical {
+  box-shadow: inset 0 0 7px 0 #ed8796;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content {
+  margin: 7px;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .summary {
+  color: @foreground;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .time {
+  color: @foreground;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .body {
+  color: @foreground;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  image {
+  min-height: 30px;
+  min-width: 30px;
+  margin-right: 6px;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-action
+  button {
+  border-radius: 6px;
+  color: @text;
+  background-color: @button-background;
+  box-shadow: inset 0 0 0 1px @button-background;
+  padding: 6px;
+  margin: 7px;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-action
+  button:hover {
+  box-shadow: inset 0 0 0 1px @color11;
+  background-color: @color11;
+  color: @text;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-action
+  button:active {
+  box-shadow: inset 0 0 0 1px @button-active;
+  background-color: @button-active;
+  color: @text;
+}
+
+.control-center .notification-row .notification-background .close-button {
+  margin: 7px;
+  padding: 2px;
+  border-radius: 6px;
+  color: #24273a;
+  background-color: #ee99a0;
+}
+
+.close-button {
+  border-radius: 6px;
+}
+
+.control-center .notification-row .notification-background .close-button:hover {
+  background-color: #ed8796;
+  color: #24273a;
+}
+
+.notification.critical progress {
+  background-color: #ed8796;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: #8aadf4;
+}
+
+.control-center-dnd {
+  margin-top: 5px;
+  border-radius: 6px;
+  background: #363a4f;
+  border: 1px solid #494d64;
+  box-shadow: none;
+}
+
+.control-center-dnd:checked {
+  background: #363a4f;
+}
+
+.control-center-dnd slider {
+  background: #494d64;
+  border-radius: 6px;
+}

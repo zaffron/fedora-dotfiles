@@ -1,0 +1,31 @@
+@import "./colors-swaync.css";
+
+/* Avoid 'annoying' backgroud */
+.blank-window {
+  background: transparent;
+}
+
+trough highlight {
+  background-color: @background;
+}
+
+scale trough {
+  margin: 0rem 1rem;
+  background-color: @color11;
+  min-height: 10px;
+  min-width: 70px;
+}
+
+slider {
+  background-color: @color11;
+}
+
+progressbar,
+progress,
+trough {
+  border-radius: 12px;
+}
+
+progressbar {
+  background-color: red;
+}

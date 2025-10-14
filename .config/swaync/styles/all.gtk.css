@@ -1,0 +1,141 @@
+@import "./reset.gtk.css";
+@import "./colors-swaync.css";
+@import "./basic.gtk.css";
+@import "./control-center.gtk.css";
+@import "./floating.gtk.css";
+
+.widget-dnd {
+  margin: 0px;
+  font-size: 1.1rem;
+}
+
+.widget-dnd>switch {
+  font-size: initial;
+  border-radius: 8px;
+  background: #363a4f;
+  border: 1px solid #494d64;
+  box-shadow: none;
+}
+
+.widget-dnd>switch:checked {
+  background: #363a4f;
+}
+
+.widget-dnd>switch slider {
+  background: #494d64;
+  border-radius: 8px;
+  border: 1px solid #6e738d;
+}
+
+.widget-dnd>switch:checked slider {
+  background: @color15;
+}
+
+/**
+* =======================
+*       START - MPRIS
+* =======================
+**/
+.widget-mpris {
+  background: @color1;
+  padding: 3px 6px;
+  margin: 10px 6px;
+  border-radius: 10px;
+}
+
+.widget-mpris .widget-mpris-player {
+  min-height: 120px;
+}
+
+.widget-mpris .mpris-overlay {
+  background-color: @color1;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.widget-mpris-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.widget-mpris .widget-mpris-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay>box>button {
+  margin: 0 5px;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay>box:last-child>button:hover {
+  background: @color9;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-album-art {
+  border-radius: 60px;
+}
+
+/**
+* =======================
+*       END - MPRIS
+* =======================
+**/
+
+.widget-menubar>box>.menu-button-bar>button>label {
+  font-size: 3rem;
+  padding: 0.5rem 2rem;
+}
+
+.widget-menubar>box>.menu-button-bar> :last-child {
+  color: #ed8796;
+}
+
+.power-buttons button:hover,
+.powermode-buttons button:hover,
+.screenshot-buttons button:hover {
+  background: #363a4f;
+}
+
+.widget-buttons-grid {
+  /* font-size: x-large; */
+  font-size: 1.4rem;
+  padding: 6px 2px;
+  margin: 12px 6px;
+  border-radius: 12px;
+  background: @background-alt;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button label {
+  font-size: 1.2rem;
+  margin: 4px 10px;
+  padding: 6px 12px;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: @color1;
+  border-radius: 15px;
+}
+
+.widget-volume {
+  margin: 6px;
+  border-radius: 6px;
+}
+
+.widget-volume label {
+  font-size: 1.5rem;
+  color: @color13;
+}
+
+.widget-volume trough highlight {
+  background: @color1;
+}
+
+.image {
+  padding-right: 0.5rem;
+}

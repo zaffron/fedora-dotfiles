@@ -1,0 +1,76 @@
+/* wallust-wlogout */
+
+/* Importing wallust colors */
+@import "../../.config/waybar/wallust/colors-waybar.css";
+
+window {
+  font-family: "Adwaita";
+  font-size: 16;
+  /* text */
+  background-color: rgba(255, 255, 255, 0.4);
+  /* background-color: @foreground; */
+}
+
+button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  background-color: @color3;
+  animation: gradient_f 10s ease-in infinite;
+  transition:
+    all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682),
+    box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  border-radius: 80px;
+  border: 0px;
+  margin: 20px;
+  color: @foreground;
+}
+
+button:focus {
+  border: 0px;
+}
+
+button:hover {
+  background-color: @color12;
+  color: orange;
+  margin: 20px;
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+  font-size: 1.4em;
+  /* Increase the font size */
+}
+
+#lock {
+  background-image: image(url("./icons/lock.png"));
+}
+
+#lock:hover {
+  background-image: image(url("./icons/lock-hover.png"));
+}
+
+#logout {
+  background-image: image(url("./icons/logout.png"));
+}
+
+#logout:hover {
+  background-image: image(url("./icons/logout-hover.png"));
+}
+
+#shutdown {
+  background-image: image(url("./icons/power.png"));
+}
+
+#shutdown:hover {
+  background-image: image(url("./icons/power-hover.png"));
+}
+
+#reboot {
+  background-image: image(url("./icons/restart.png"));
+}
+
+#reboot:hover {
+  background-image: image(url("./icons/restart-hover.png"));
+}

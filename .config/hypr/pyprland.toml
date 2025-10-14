@@ -1,0 +1,21 @@
+[pyprland]
+
+plugins = [
+  "scratchpads",
+  "magnify",
+]
+
+[scratchpads.term]
+animation = "fromTop"
+lazy = true
+command = "alacritty --class alacritty-dropterm"
+class = "alacritty-dropterm"
+size = "75% 60%"
+
+
+[scratchpads.spotify]
+animation = "fromTop"
+lazy = true
+command = "spotify"
+class = "spotify-dropdown"
+size = "90% 90%"
