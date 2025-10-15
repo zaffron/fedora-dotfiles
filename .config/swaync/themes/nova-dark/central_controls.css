@@ -1,8 +1,8 @@
-@define-color text            @foreground;
-@define-color background-alt  alpha(@color1, .4);
-@define-color selected        @color6;
-@define-color hover           alpha(@selected, .4);
-@define-color urgent          @color2;
+@define-color text @foreground;
+@define-color background-alt alpha(@color1, .4);
+@define-color selected @color6;
+@define-color hover alpha(@selected, .4);
+@define-color urgent @color2;
 
 * {
   color: @text;
@@ -11,6 +11,7 @@
   font-size: 14px;
   font-family: "JetBrains Mono Nerd Font 10";
   transition: 200ms;
+
 }
 
 /* Avoid 'annoying' backgroud */
@@ -21,81 +22,48 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 
 .control-center {
-  background: alpha(@background, 0.55);
+  background: alpha(@background, .55);
   border-radius: 24px;
   border: 1px solid @selected;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
   margin: 18px;
   padding: 12px;
 }
 
 /* Notifications  */
 .control-center .notification-row .notification-background,
-.control-center
-  .notification-row
-  .notification-background
-  .notification.critical {
+.control-center .notification-row .notification-background .notification.critical {
   background-color: @background-alt;
   border-radius: 16px;
   margin: 4px 0px;
   padding: 4px;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification.critical {
+.control-center .notification-row .notification-background .notification.critical {
   color: @urgent;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  .notification-content {
+.control-center .notification-row .notification-background .notification .notification-content {
   margin: 6px;
   padding: 8px 6px 2px 2px;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > * {
+.control-center .notification-row .notification-background .notification>*:last-child>* {
   min-height: 3.4em;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action {
-  background: alpha(@selected, 0.6);
+.control-center .notification-row .notification-background .notification>*:last-child>* .notification-action {
+  background: alpha(@selected, .6);
   color: @text;
   border-radius: 12px;
   margin: 6px;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action:hover {
+.control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:hover {
   background: @selected;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .notification
-  > *:last-child
-  > *
-  .notification-action:active {
+.control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:active {
   background-color: @selected;
 }
 
@@ -113,10 +81,7 @@
   background-color: @selected;
 }
 
-.control-center
-  .notification-row
-  .notification-background
-  .close-button:active {
+.control-center .notification-row .notification-background .close-button:active {
   background-color: @selected;
 }
 
@@ -127,14 +92,16 @@ trough {
 }
 
 progressbar {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, .1);
 }
 
 /* Notifications expanded-group */
 
 .notification-group {
   margin: 2px 8px 2px 8px;
+
 }
+
 .notification-group-headers {
   font-weight: bold;
   font-size: 1.25rem;
@@ -188,7 +155,7 @@ progressbar {
   font-size: 1.2rem;
 }
 
-.widget-dnd > switch {
+.widget-dnd>switch {
   background: @background-alt;
   font-size: initial;
   border-radius: 8px;
@@ -196,19 +163,19 @@ progressbar {
   padding: 2px;
 }
 
-.widget-dnd > switch:hover {
+.widget-dnd>switch:hover {
   background: @hover;
 }
 
-.widget-dnd > switch:checked {
+.widget-dnd>switch:checked {
   background: @selected;
 }
 
-.widget-dnd > switch:checked:hover {
+.widget-dnd>switch:checked:hover {
   background: @hover;
 }
 
-.widget-dnd > switch slider {
+.widget-dnd>switch slider {
   background: @text;
   border-radius: 6px;
 }
@@ -222,16 +189,17 @@ progressbar {
   background: @background-alt;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button {
+.widget-buttons-grid>flowbox>flowboxchild>button {
   margin: 4px 10px;
   padding: 6px 12px;
   background: transparent;
   border-radius: 8px;
 }
 
-.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
   background: @hover;
 }
+
 
 /* Music player */
 .widget-mpris {
@@ -249,13 +217,13 @@ progressbar {
   margin: 6px;
 }
 
-.widget-mpris > box > button {
+.widget-mpris>box>button {
   color: @text;
   border-radius: 20px;
 }
 
 .widget-mpris button {
-  color: alpha(@text, 0.6);
+  color: alpha(@text, .6);
 }
 
 .widget-mpris button:hover {

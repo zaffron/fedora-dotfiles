@@ -2,15 +2,15 @@
   "$schema": "/etc/xdg/swaync/configSchema.json",
   "positionX": "center",
   "positionY": "top",
+  "layer": "overlay",
   "cssPriority": "user",
-  "control-center-width": 380,
+  "control-center-width": 480,
   "control-center-height": 860,
   "control-center-margin-top": 1,
   "control-center-margin-bottom": 2,
   "control-center-margin-right": 1,
   "control-center-margin-left": 0,
   "notification-window-width": 400,
-  "notification-icon-size": 48,
   "notification-body-image-height": 160,
   "notification-body-image-width": 200,
   "timeout": 4,
@@ -37,7 +37,6 @@
     }
   },
   "widgets": [
-    "label",
     "buttons-grid",
     "mpris",
     "title",
@@ -53,19 +52,19 @@
     "dnd": {
       "text": "Do not disturb"
     },
-    "label": {
-      "max-lines": 1,
-      "text": " "
-    },
     "mpris": {
-      "image-size": 96,
-      "image-radius": 12
+      "blacklist": [
+        "playerctld"
+      ],
+      "autohide": false,
+      "show-album-art": "when-available"
     },
     "volume": {
       "label": "󰕾",
       "show-per-app": true
     },
     "buttons-grid": {
+      "buttons-per-row": 4,
       "actions": [
         {
           "label": " ",
@@ -82,10 +81,6 @@
         {
           "label": "󰂯",
           "command": "blueman-manager"
-        },
-        {
-          "label": "󰏘",
-          "command": "nwg-look"
         }
       ]
     }

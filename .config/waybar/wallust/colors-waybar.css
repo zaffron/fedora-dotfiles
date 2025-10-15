@@ -1,22 +1,22 @@
  /* wallust template - colors-waybar */
 
-@define-color foreground #FAF8F3;
-@define-color background rgba(49,48,47,0.25);
-@define-color cursor #96948F;
+@define-color foreground #F2FBFE;
+@define-color background rgba(19,19,24,0.25);
+@define-color cursor #98A4CC;
 
-@define-color color0 #555554;
-@define-color color1 #252421;
-@define-color color2 #252421;
-@define-color color3 #665F59;
-@define-color color4 #716A64;
-@define-color color5 #B6B0A5;
-@define-color color6 #B6B0A5;
-@define-color color7 #F0EDE5;
-@define-color color8 #A8A6A0;
-@define-color color9 #32302C;
-@define-color color10 #32302C;
-@define-color color11 #887F77;
-@define-color color12 #978E85;
-@define-color color13 #F2EBDC;
-@define-color color14 #F2EBDC;
-@define-color color15 #F0EDE5;
+@define-color color0 #3B3A40;
+@define-color color1 #2F3A73;
+@define-color color2 #2F3A73;
+@define-color color3 #333F77;
+@define-color color4 #566799;
+@define-color color5 #758AB7;
+@define-color color6 #A4B6BE;
+@define-color color7 #E5F1F6;
+@define-color color8 #A0A8AC;
+@define-color color9 #3E4D99;
+@define-color color10 #3E4D99;
+@define-color color11 #44549F;
+@define-color color12 #7389CC;
+@define-color color13 #9CB8F4;
+@define-color color14 #DBF3FD;
+@define-color color15 #E5F1F6;

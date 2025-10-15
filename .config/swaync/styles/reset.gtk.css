@@ -3,3 +3,10 @@
   transition: 200ms;
   font-family: "Adwaita", sans-serif;
 }
+
+:root {
+  --border-radius: 22px;
+  --notification-icon-size: 48px;
+  --mpris-album-art-icon-size: 66px;
+  --mpris-album-art-icon-radius: 0px;
+}

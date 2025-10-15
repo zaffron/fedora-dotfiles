@@ -2,6 +2,7 @@
 
 @define-color text {{foreground}};
 @define-color background rgba({{background | rgb}},1);
+@define-color albumArtBackground rgba({{color9 | rgb}},0.5);
 @define-color background-alt {{background}};
 @define-color cursor {{cursor}};
 @define-color hovered {{color12}};
